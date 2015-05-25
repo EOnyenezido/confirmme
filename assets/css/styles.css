@@ -1,0 +1,246 @@
+html,body {
+	height:100%;
+    /*background:center no-repeat fixed url('/assets/example/blurred.jpg');*/
+    background-size: cover;
+}
+
+.icon-bar {
+	background-color:#fff;
+}
+
+.navbar-trans {
+	background-color:#279ddd;
+    color:#fff;
+}
+
+.navbar-trans li>a:hover,.navbar-trans li>a:focus,.navbar-trans li.active {
+	background-color:#38afef;
+}
+
+.navbar-trans a{
+    color:#fefefe;
+}
+
+.navbar-trans .form-control:focus {
+	border-color: #eee;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+}
+
+section {
+	padding-top:5%;  
+  padding-bottom:5%; 
+  min-height:calc(100% - 1px);
+  border-top: thin groove #279ddd;
+}
+
+.v-center {
+    padding-bottom:3%;
+    font-size:70px;
+}
+
+.i-center {
+    padding-top:5%;
+}
+
+.thumbnail-top {
+  width: 20rem;
+  height: 1rem;
+}
+  
+.well {
+	border-color:transparent;
+}
+
+a.list-group-item.active,[class*='-info'] {
+	background-color: #168ccc;
+    color:#fff;
+}
+
+.text-small {
+  font-size: 8pt;
+}
+  
+/*#section1 {
+	
+}
+  
+#section2 {
+	background-color: #e5e5ef;
+  color:#686868;
+}
+  
+#section3 {
+	/*background-color: #168ccc;
+    color:#ddd;
+}
+
+#section4 {
+	background-color: #fff;
+    color:#444;
+}
+
+#section5,#section7,#section7 a {
+    color:#f5f5f5;
+}
+
+#section6 {
+	background-color: #168ccc;
+    color:#ddd;
+}*/
+
+footer {
+	background-color:#494949;
+    color:#ddd;
+    min-height:100px;
+    padding-top:20px;
+    padding-bottom:40px;
+}
+
+footer .nav>li>a {
+    padding:3px;
+    color:#ccc;
+}
+
+footer .nav>li>a:hover {
+    background-color:transparent;
+	color:#fff;
+}
+
+.captionOrange, .captionBlack{
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+.captionOrange{
+  background: #EB5100;
+  background-color: rgba(235, 81, 0, 0.6);
+  }
+.captionBlack{
+  font-size:16px;
+  background: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited{
+  color: #ffffff;
+  text-decoration: none;
+}
+a.captionOrange:hover{
+  color: #eb5100;
+  text-decoration: underline;
+  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon{
+  background: url(../img/browser-icons.png);
+}
+
+.share-icon {
+  display: inline-block;
+  float: left;
+  margin: 4px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  vertical-align: middle;
+  background-image: url(../img/share/share-icons.png);
+}
+
+.share-facebook {
+  background-position: 0px 0px;
+}
+
+.share-facebook:hover {
+  background-position: 0px -40px;
+}
+
+.share-twitter {
+  background-position: -40px 0px;
+}
+
+.share-twitter:hover {
+  background-position: -40px -40px;
+}
+
+.share-pinterest {
+  background-position: -80px 0px;
+}
+
+.share-pinterest:hover {
+  background-position: -80px -40px;
+}
+
+.share-linkedin {
+  background-position: -240px 0px;
+}
+
+.share-linkedin:hover {
+  background-position: -240px -40px;
+}
+
+
+.share-googleplus {
+  background-position: -120px 0px;
+}
+
+.share-googleplus:hover {
+  background-position: -120px -40px;
+}
+
+
+.share-stumbleupon {
+  background-position: -360px 0px;
+}
+
+.share-stumbleupon:hover {
+  background-position: -360px -40px;
+}
+
+.share-email {
+  background-position: -320px 0px;
+}
+
+.share-email:hover {
+  background-position: -320px -40px;
+}
+
+.jssorb03 {
+                position: absolute;
+            }
+            .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 21px;
+                height: 21px;
+                text-align: center;
+                line-height: 21px;
+                color: white;
+                font-size: 12px;
+                background: url(../img/b03.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb03 div { background-position: -5px -4px; }
+            .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+            .jssorb03 .av { background-position: -65px -4px; }
+            .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+
+.jssora20l, .jssora20r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                background: url(../img/a20.png) no-repeat;
+                overflow: hidden;
+            }
+            .jssora20l { background-position: -3px -33px; }
+            .jssora20r { background-position: -63px -33px; }
+            .jssora20l:hover { background-position: -123px -33px; }
+            .jssora20r:hover { background-position: -183px -33px; }
+            .jssora20l.jssora20ldn { background-position: -243px -33px; }
+            .jssora20r.jssora20rdn { background-position: -303px -33px; }

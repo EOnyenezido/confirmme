@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Confirm Me!</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="lib/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="assets/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+  <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><i class="fa fa-check-circle"></i>&nbspConfirmMe</a>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-collapsible">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">How it Works</a></li>
+          <li><a href="#section3">Our Services</a></li>
+          <li><a href="#section6">FAQ</a></li>
+          <li><a href="#section7">Contact Us</a></li>
+          <li>&nbsp;</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" data-toggle="modal" data-target="#signUp">Sign Up</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#logIn">Log in</a></li>
+        </ul>
+        <!--form class="navbar-form">
+          <div class="form-group" style="display:inline;">
+            <div class="input-group"> 
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Category 1</a></li>
+                  <li><a href="#">Category 2</a></li>
+                  <li><a href="#">Category 3</a></li>
+                  <li><a href="#">Category 4</a></li>
+                  <li><a href="#">Category 5</a></li> 
+                </ul>
+              </div>
+              <input type="text" class="form-control" placeholder="What are searching for?">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
+            </div>
+          </div>
+        </form-->
+      </div>
+    </div>
+  </nav>
+
+  <!--Log in modal-->
+  <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sign in</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-4">
+                <button type="submit" class="btn btn-default">Sign in</button>
+              </div>
+              <div class="col-sm-offset-2 col-sm-4" style="margin-top:3%">
+                <a href="">Forgot Password?</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <span>New User?</span>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUp" data-dismiss="modal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Sign Up modal-->
+  <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">New User? Register to get access!</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputTitle1" class="col-sm-2 control-label">Title *</label>
+              <div class="col-sm-10">
+                <input list="titles" class="form-control" id="inputTitle1">
+                <datalist id="titles">
+                  <option value="Mr">
+                  <option value="Mrs">
+                  <option value="Ms">
+                  <option value="Miss">
+                  <option value="Dr.">
+                  <option value="Sir">
+                </datalist>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="firstName" class="col-sm-2 control-label">First Name *</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="col-sm-2 control-label">Last Name *</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="BVN" class="col-sm-2 control-label">BVN No</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="BVN" placeholder="22283421972">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="postalAddress" class="col-sm-2 control-label">Postal Address *</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="2" id="postalAddress" placeholder="Postal Address"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="physicalAddress" class="col-sm-2 control-label">Physical Address</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="3" id="physicalAddress" placeholder="Address"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="postalZipCode" class="col-sm-2 control-label">Postal/Zip Code</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="postalZipCode" placeholder="500272">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="town/City" class="col-sm-2 control-label">Town/City *</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="town/City" placeholder="Lagos">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="counTry" class="col-sm-2 control-label">Country *</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="counTry" placeholder="Nigeria">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-4">
+                <button type="submit" class="btn btn-default">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <span>Old User?</span>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#logIn" data-dismiss="modal">Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<section class="container-fluid" id="section1">
+  	<div id="slider1_container" class="center-block" style="position: relative; width: 980px;
+        height: 380px; overflow: hidden;">
+ 
+        <!-- Loading Screen --> 
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+
+                background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;"> 
+            </div> 
+            <div style="position: absolute; display: block; background: url(assets/img/loading.gif) no-repeat center center;
+
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div> 
+        </div> 
+ 
+        <!-- Slides Container --> 
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 980px; height: 380px;
+            overflow: hidden;">
+            <div>
+                <img u="image" src="assets/img/home/01.jpg" />
+                <div u=caption t="CLIP|LR" du="1500" class="captionOrange"  style="position:absolute; left:20px; top: 30px; width:500px; height:30px;"> 
+                Confirm Academic Qualifications
+                </div>
+                <div u=caption t="L|IB" t2=L d=-900 class="captionBlack"  style="position:absolute; left:190px; top: 70px; width:60px; height:30px;"> 
+                Features
+                </div> 
+                <div u=caption t="RTT|360" d=-200 class="captionBlack"  style="position:absolute; left:270px; top: 70px; width:60px; height:30px;"> 
+                Include
+                </div>
+                <div u="caption" t="MCLIP|L" d=-300 style="position:absolute;left:30px;top:100px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Verify Certificates</div>
+                <div u="caption" t="MCLIP|L" d=-300 style="position:absolute;left:30px;top:140px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Jamb Result</div>
+                <div u="caption" t="MCLIP|L" d=-300 style="position:absolute;left:30px;top:180px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">WAEC/NECO Result</div>
+                <div u="caption" t="MCLIP|L" d=-300 style="position:absolute;left:30px;top:220px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Professional Qualifications</div>
+                <div u="caption" t="MCLIP|L" d=-300 style="position:absolute;left:30px;top:260px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Order Transcripts</div>
+                <div u="caption" t="MCLIP|L" d=-300 style="position:absolute;left:30px;top:300px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Order Letter of Completion</div>
+                <!--div u=caption t="DDGDANCE|RB" t2="RTT|10" d=-1800 du=3800 class="captionOrange" style="position:absolute; left:120px; top: 110px; width:300px; height:240px; text-align: left;">
+                    &nbsp; Verify Certificates<br />
+                    &nbsp; Jamb Result<br />
+                    &nbsp; WAEC/NECO Result<br />
+                    &nbsp; Professional Qualifications<br />
+                    &nbsp; Order Transcripts<br />
+                    &nbsp; Order Letter of Completion
+                </div>
+                <div u=caption t="T|IE*IE" d=-1600 du=3800 t2="B" class="captionOrange" style="position:absolute; left:20px; top: 310px; width:330px; height:30px;">
+                    slideshow and responsive slider ...
+                </div>
+                <div u="caption" t="ZMF|10" t2="B" d=-1300 style="position:absolute;left:420px;top:280px;width:90px;height:40px;font-size:36px;color:#fff;line-height:40px;">390+</div>
+                <div u="caption" t="CLIP|L" d=-300 style="position:absolute;left:520px;top:280px;width:160px;height:40px;font-size:36px;color:#fff;line-height:40px; text-align: center;">caption</div-->
+                <a class="captionOrange" u="caption" t="CLIP|L" d=-300 href="http://www.jssor.com/development/tool-caption-transition-viewer.html" style="position:absolute;left:720px;top:280px;width:220px;height:30px;">» Get Started</a>
+            </div>
+            <div> 
+                <img u="image" src="assets/img/home/02.jpg" />
+                <a class="captionOrange" href="http://www.jssor.com/development/tool-slideshow-transition-viewer.html" style="position: absolute; top: 300px; left: 630px; width: 250px; height: 30px;">» Know your customer</a>
+                <div u=caption t="CLIP|LR" t2="B" du="2000" class="captionOrange"  style="position:absolute; left:20px; top: 300px; width:500px; height:30px;"> 
+                Do you Know Your Customer (KYC)? If in doubt...
+                </div>
+                <div u="caption" t="FADE" t2="B" d=-450 class=captionBlack style="position: absolute; left:700px;top:120px;width:200px;height:90px;">
+                        
+                </div>
+                <div u="caption" t="T|IB" t2="R" d=-600 class=captionOrange style="position: absolute; top: 90px; left: 720px; width: 160px;
+                    height: 90px;  line-height: 90px;">
+                    Confirm Me!
+                </div>
+                <div u="caption" t="MCLIP|T" t2="T" d=-450 style="position:absolute;left:505px;top:40px;width:200px;height:30px;font-size:18px;color:#fff;line-height:30px;text-align:center;">Features&nbsp; &nbsp; &nbsp;</div>
+                <div u="caption" t="MCLIP|R" d=-300 style="position:absolute;left:325px;top:90px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Show Proof of Identity&nbsp; &nbsp; &nbsp; (POI)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +</div>
+                <div u="caption" t="MCLIP|R" d=-300 style="position:absolute;left:325px;top:140px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Show Proof of Address&nbsp; &nbsp; &nbsp;(POA)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+</div>
+                <div u="caption" t="MCLIP|R" d=-300 style="position:absolute;left:325px;top:190px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Membership Validation&nbsp; &nbsp; &nbsp; (MV)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +</div>
+            </div>
+            <div> 
+                <img u="image" src="assets/img/home/03.jpg" />
+                <a class="captionOrange" href="http://www.jssor.com/demos/index.html" style="position: absolute; top: 50px; right: 30px; width: 200px;">» Confirm Marriage</a>
+                <div u=caption t="T" t2=NO style="position: absolute; left: 20px; top:30px; width:600px; height:90px; color: #fff; line-height: 30px; text-align: center;"> 
+                    Have you ever wondered if that man you are about to say yes to is married?<br />
+                </div>
+                <div u="caption" t="MCLIP|L" d=-300 style="position:absolute;left:30px;top:100px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Verify if married</div>
+                <div u="caption" t="MCLIP|L" d=-300 style="position:absolute;left:30px;top:140px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Verify if divorced</div>
+                <div u="caption" t="MCLIP|L" d=-300 style="position:absolute;left:30px;top:180px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Verify authenticity of marriage certificates</div>
+                <div u=caption t="L" d=-750 class="captionOrange"  style="position:absolute; left:20px; top: 300px; width:130px; height:30px;"> 
+                Confirm Me
+                </div>
+                <div u=caption t="CLIP|L" t2=B d=-450 class="captionBlack"  style="position:absolute; left:160px; top: 300px; width:30px; height:30px;"> 
+                is
+                </div>
+                <div u=caption t="DDG|TR" t2="TORTUOUS|VB" d=-750 class="captionOrange"  style="position:absolute; left:200px; top: 300px; width:300px; height:30px;"> 
+                the most reliable one-stop shop
+                </div>
+                <div u=caption t="CLIP|L" t2=B d=-450 class="captionBlack"  style="position:absolute; left:510px; top: 300px; width:30px; height:30px;"> 
+                for
+                </div>
+                <div u=caption t="DDG|TR" t2="TORTUOUS|VB" d=-750 class="captionOrange"  style="position:absolute; left:550px; top: 300px; width:300px; height:30px;"> 
+                secure verification.
+                </div>
+            </div>
+            <div>
+                <img u="image" src="assets/img/home/04.jpg" />
+                <div u=caption t="RTTS|T" d=-300 t2="B" class=captionOrange style="position:absolute; left:20px; top: 330px; width:300px; height:30px;"> 
+                Confirm Credit Status
+                </div>
+                <div u=caption t="T|IB" t2="T" d=-300 class="captionOrange"  style="position:absolute; left:20px; top: 100px; width:130px; height:30px;"> 
+                All major banks
+                </div>
+                <div u=caption t="T|IB" t2=L d=-900 class="captionBlack"  style="position:absolute; left:60px; top: 170px; width:100px; height:30px;"> 
+                supported
+                </div>
+                <!--div u="caption" t="WV|B" t2="T" d=-600 class=bricon style="position:absolute; top:50px; left: 220px; width:30px; height:30px; background-position: 0px 0px;"></div>
+                <div u="caption" t="WV|B" t2="T" d="-1100" class=bricon style="position:absolute; top:100px; left: 220px; width:30px; height:30px; background-position: -30px 0px;"></div>
+                <div u="caption" t="WV|B" t2="T" d="-1100" class=bricon style="position:absolute; top:150px; left: 220px; width:30px; height:30px; background-position: -60px 0px;"></div>
+                <div u="caption" t="WV|B" t2="T" d="-1100" class=bricon style="position:absolute; top:200px; left: 220px; width:30px; height:30px; background-position: -90px 0px;"></div>
+                <div u="caption" t="WV|B" t2="T" d="-1100" class=bricon style="position:absolute; top:250px; left: 220px; width:30px; height:30px; background-position: -120px 0px;"></div-->
+                <div u="caption" t="LISTH|R" t2="CLIP|TB" d=-600 class=captionOrange style="position: absolute; top: 40px; left: 280px; width: 180px;
+                    height: 250px; text-align: left; line-height: 50px;">
+                        &nbsp; First bank<br />
+                        &nbsp; UBA<br />
+                        &nbsp; GTB<br />
+                        &nbsp; Diamond Bank<br />
+                        &nbsp; Zenith Bank
+                </div>
+                <div u=caption t="T|IB" t2=L d=-900 class="captionBlack"  style="position:absolute; left:370px; top: 275px; width:100px; height:30px;"> 
+                and more...
+                </div>
+                <div u=caption t="TR" t2="T" d=-900 class="captionOrange"  style="position:absolute; left:700px; top: 40px; width:130px; height:30px;"> 
+                Features
+                </div>
+                <div u=caption t="R" t2=R d=-900 class="captionBlack"  style="position:absolute; left:780px; top: 55px; width:100px; height:30px;"> 
+                include
+                </div>
+                <div u="caption" t="MCLIP|R" d=-300 style="position:absolute;left:500px;top:90px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Verify if your client is in debt&nbsp; &nbsp; +</div>
+                <div u="caption" t="MCLIP|R" d=-300 style="position:absolute;left:500px;top:140px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Get credit reports&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +</div>
+                <div u="caption" t="MCLIP|R" d=-300 style="position:absolute;left:500px;top:190px;width:350px;height:30px;font-size:18px;color:#fff;line-height:30px;">Report your debtors&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +</div>
+            </div>
+            <!--Slider Share Buttons-->
+            <div u="any" style="position: absolute; display: block; top: 6px; right: 16px; width: 280px; height: 40px; z-index: 10;">
+
+                <a class="share-icon share-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http://jssor.com" title="Share on Facebook"></a>
+                <a class="share-icon share-twitter" target="_blank" href="http://twitter.com/share?url=http://jssor.com&text=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on Twitter"></a>
+                <a class="share-icon share-googleplus" target="_blank" href="https://plus.google.com/share?url=http://jssor.com" title="Share on Google Plus"></a>
+                <a class="share-icon share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://jssor.com" title="Share on LinkedIn"></a>
+                <a class="share-icon share-stumbleupon" target="_blank" href="http://www.stumbleupon.com/submit?url=http://jssor.com&title=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on StumbleUpon"></a>
+                <a class="share-icon share-pinterest" target="_blank" href="http://pinterest.com/pin/create/button/?url=http://jssor.com&media=http://jssor.com/img/site/jssor.slider.jpg&description=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on Pinterst"></a>
+                <a class="share-icon share-email" target="_blank" href="mailto:?Subject=Jssor%20Slider&Body=Highly%20recommended%20JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive%20http://jssor.com" title="Share by Email"></a>
+            </div>
+        </div>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb03" style="bottom: 16px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"><div u="numbertemplate"></div></div>
+        </div>
+        <span u="arrowleft" class="jssora20l" style="top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora20r" style="top: 123px; right: 8px;">
+        </span>
+        <!--#endregion Arrow Navigator Skin End -->
+    </div> 
+    <!-- Slider End -->
+    <div class="container">
+      <div class="row">
+            <div class="col-lg-12">
+                <h3>Our Services</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Confirm Qualification</h3>
+                        <p>Securely verify academic qualifications online!</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Sign Up!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Know Your Customer</h3>
+                        <p>Instantly validate customer details according to KYC requirements.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Sign Up!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Confirm Marriage</h3>
+                        <p>Verify marital status and marriage certificates.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Sign Up!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Confrim Credit Status</h3>
+                        <p>Confirm credit history and debt status.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Sign Up!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Services Design 2-->
+      <!--div class="row">
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-sm-4"><img src="assets/img/qualifications.jpg" class="thumbnail thumbnail-top"></div>
+            <div class="col-sm-7 col-sm-offset-1">
+                <h3>Confirm Qualification</h3>
+                <p class="text-muted">Verify academic qualifications online.</p>
+                <p><a href="#">» view more...</a></p>
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-sm-4"><img src="assets/img/kyc.jpg" class="thumbnail thumbnail-top"></div>
+            <div class="col-sm-7 col-sm-offset-1">
+                <h3>Know Your Customer</h3>
+                <p class="text-muted">Validate customer details.</p>
+                <p><a href="#">» view more...</a></p>
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-sm-4"><img src="assets/img/wedding.jpg" class="thumbnail thumbnail-top"></div>
+            <div class="col-sm-7 col-sm-offset-1">
+                <h3>Confirm Marriage</h3>
+                <p class="text-muted">Verify marital status and certificates.</p>
+                <p><a href="#">» view more...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-sm-4"><img src="assets/img/credit.jpg" class="thumbnail thumbnail-top"></div>
+            <div class="col-sm-7 col-sm-offset-1">
+                <h3>Confirm Credit Status</h3>
+                <p class="text-muted">Confirm credit history and debt status.</p>
+                <p><a href="#">» view more...</a></p>
+          </div>
+        </div>
+        </div>
+      </div-->
+      <!--div class="row">
+    <div class="col-md-3 text-center">
+      <img class="img-circle thumbnail-top" src="assets/img/qualifications.jpg">
+      <h2>Confirm Qualification</h2>
+      <p>Verify academic qualifications online.</p>
+      <p><a class="btn btn-default" href="#">View more »</a></p>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="img-circle thumbnail-top" src="assets/img/kyc.jpg">
+      <h2>Know Your Customer</h2>
+      <p>Validate customer details</p>
+      <p><a class="btn btn-default" href="#">View more »</a></p>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="img-circle thumbnail-top" src="assets/img/wedding.jpg">
+      <h2>Confirm<br>Marriage</h2>
+      <p>Verify marital status and certificates.</p>
+      <p><a class="btn btn-default" href="#">View more »</a></p>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="img-circle thumbnail-top" src="assets/img/credit.jpg">
+      <h2>Confirm Credit Status</h2>
+      <p>Confirm credit history and debt status.</p>
+      <p><a class="btn btn-default" href="#">View more »</a></p>
+    </div>
+  </div-->
+    </div>  
+</section>
+
+<section class="container-fluid" id="section2">
+  <h1 class="text-center v-center">How it works</h1>
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-3">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-2 text-center"><i class="fa fa-user fa-5x"></i><h3>Sign Up</h3><p>Set up your own personal account where all your transactions are stored.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-1 i-center"><i class="fa fa-chevron-circle-right fa-5x"></i></div>
+          <div class="col-sm-3 text-center">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1 text-center"><i class="fa fa-credit-card fa-5x"></i><h3>Buy Credits</h3><p>You buy several credits at once and then use them as and when needed. ATM cards are accepted.</p></div>
+            </div>
+          </div>
+          <div class="col-sm-1 i-center"><i class="fa fa-chevron-circle-right fa-5x"></i></div>
+          <div class="col-sm-3 text-center">
+            <div class="row">
+              <div class="col-sm-10 text-center"><i class="fa fa-user-secret fa-5x"></i><h3>Request a Verification</h3><p>Fill in the necessary details, submit a consent form if required, and just click Verify!</p></div>
+            </div>
+          </div>
+      </div><!--/row-->
+    <div class="row"><br></div>
+    <div class="row"><div class="col-sm-8 col-sm-offset-4"><a class="btn btn-primary" href="#" role="button">SIGN UP NOW</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn btn-primary" href="#" role="button">FIND OUT MORE</a></div></div>
+  </div><!--/container-->
+</section>
+
+<!-- Our Services -->
+<section class="container-fluid" id="section3">
+	<div class="row">
+    <div class="col-md-4 text-center">
+      <i class="fa fa-certificate fa-5x text-primary"></i>
+      <h2>Confirm Qualifications</h2>
+      <p>Verify academic qualifications online with real time response. ConfirmMe securely connects to authentic electronic registers of academic institutions and examining bodies for this purpose. </p>
+      <p><a class="btn btn-default" href="#"><i class="fa fa-share fa-flip-vertical"></i> Find out more »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <i class="fa fa-group fa-5x text-primary"></i>
+      <h2>Employee Verfication</h2>
+      <p>Verify employee work history.</p>
+      <p><a class="btn btn-default" href="#"><i class="fa fa-share fa-flip-vertical"></i> Find out more »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <i class="fa fa-credit-card fa-5x text-primary"></i>
+      <h2>Confirm Credit Status</h2>
+      <p>Before going into business with that entity you just got introduced to, have you ever wondered what his credit history is like? If in doubt…..ConfirmMe!</p>
+      <p><a class="btn btn-default" href="#"><i class="fa fa-share fa-flip-vertical"></i> Find out more »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <i class="fa fa-car fa-5x text-primary"></i>
+      <h2>FRSC Verification</h2>
+      <p>Securely Verify Drivers License Authenticity.</p>
+      <p><a class="btn btn-default" href="#"><i class="fa fa-share fa-flip-vertical"></i> Find out more »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <i class="fa fa-user-plus fa-5x text-primary"></i>
+      <h2>Know Your Customer</h2>
+      <p>Are you in the financial industry? Do you want to open an account for that customer as soon as possible while ensuring you can prove you know him well enough according to regulatory requirements? Do you Know Your Customer (KYC)? If in doubt……ConfirmMe!</p>
+      <p><a class="btn btn-default" href="#"><i class="fa fa-share fa-flip-vertical"></i> Find out more »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <i class="fa fa-heart fa-5x text-primary"></i>
+      <h2>Confirm Marriage</h2>
+      <p>Have you ever wondered if that man you are about to say yes to is not yet married or has not been married at some point? If in doubt….ConfirmMe!</p>
+      <p><a class="btn btn-default" data-container="body" data-toggle="popover" data-html="true" title="Features" data-placement="left" data-content="<i class='fa fa-user-plus fa-5x text-primary'></i>"><i class="fa fa-share fa-flip-vertical"></i> Find out more »</a></p>
+    </div>
+  </div>
+</section>
+
+
+<section class="container" id="section7">
+	<h1 class="text-center">Contact Us On Social Media!</h1>
+    <div class="row">
+      <!--fontawesome icons-->
+      <div class="col-sm-1 col-sm-offset-2 col-xs-4 text-center">
+       <i class="fa fa-github fa-4x"></i>
+      </div>
+      <div class="col-sm-1 col-xs-4 text-center">
+       <i class="fa fa-foursquare fa-4x"></i>
+      </div>
+      <div class="col-sm-1 col-xs-4 text-center">
+       	<i class="fa fa-facebook fa-4x"></i>
+      </div>
+      <div class="col-sm-1 col-xs-4 text-center">
+       <i class="fa fa-pinterest fa-4x"></i>
+      </div>
+      <div class="col-sm-1 col-xs-4 text-center">
+       <i class="fa fa-google-plus fa-4x"></i>
+      </div>
+      <div class="col-sm-1 col-xs-4 text-center">
+       <i class="fa fa-twitter fa-4x"></i>
+      </div>
+      <div class="col-sm-1 col-xs-4 text-center">
+       <i class="fa fa-dribbble fa-4x"></i>
+      </div>
+      <div class="col-sm-1 col-xs-4 text-center">
+       <i class="fa fa-instagram fa-4x"></i>
+      </div>
+  </div><!--/row-->
+</section>
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">    
+      <div class="col-xs-6 col-sm-6 col-md-3 column">          
+          <h4>Information</h4>
+          <ul class="nav">
+            <li><a href="about-us.html">Products</a></li>
+            <li><a href="about-us.html">Services</a></li>
+            <li><a href="about-us.html">Benefits</a></li>
+            <li><a href="elements.html">Developers</a></li>
+          </ul> 
+        </div>
+      <div class="col-xs-6 col-md-3 column">          
+          <h4>Follow Us</h4>
+          <ul class="nav">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Google+</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul> 
+      </div>
+      <div class="col-xs-6 col-md-3 column">          
+          <h4>Contact Us</h4>
+          <ul class="nav">
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Headquarters</a></li>
+            <li><a href="#">Management</a></li>
+            <li><a href="#">Support</a></li>
+          </ul> 
+      </div>
+      <div class="col-xs-6 col-md-3 column">          
+          <h4>Customer Service</h4>
+          <ul class="nav">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+          </ul> 
+      </div>
+    </div><!--/row-->
+  </div>
+</footer>
+
+	<!-- script references -->
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/jssor.js"></script>
+    <script type="text/javascript" src="lib/jssor.slider.min.js"></script>
+		<script src="assets/js/slider.js"></script>
+    <script src="assets/js/scripts.js"></script>
+	</body>
+</html>
